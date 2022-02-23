@@ -14,18 +14,18 @@ public class NPC : MonoBehaviour, IInteractable
 
     public void Interact()
     {
-        print("npc interact()");
+        //print("npc interact()");
 
         OnStartDialogue(conversation);
     }
 
     public void Enter()
     {
-        print("npc enter()");
+        //print("npc enter()");
     }
 
     public void Exit()
     {
-        print("npc exit()");
+        //print("npc exit()");
     }
 }
