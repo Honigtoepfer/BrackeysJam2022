@@ -19,6 +19,7 @@ public class MovementController
         animator.SetFloat("y", -1);
 
         NPC.OnStartDialogue += TogglePlayerMovement;
+        DialogueUI.OnEndDialogue += TogglePlayerMovement;
     }
 
     void TogglePlayerMovement(DialogueConversation obj)
