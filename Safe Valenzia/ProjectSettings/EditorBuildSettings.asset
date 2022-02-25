@@ -8,4 +8,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Game/Scenes/MainScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Game/Scenes/Dungeons/Dungeon 1.unity
+    guid: c32064689e3dc8b4f8b2d1bcf59cfa1a
+  - enabled: 1
+    path: Assets/Game/Scenes/Dungeons/Dungeon 2.unity
+    guid: d5adcec190a604047a6e422603946ce9
+  - enabled: 1
+    path: Assets/Game/Scenes/Dungeons/Dungeon 3.unity
+    guid: 08daca3a6ba5915488fabe5a1eb1791a
   m_configObjects: {}

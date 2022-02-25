@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class DialogueUI : MonoBehaviour
 {
-    public static event Action OnEndDialogue;
+    public static event Action<DialogueConversation> OnEndDialogue;
 
     [SerializeField]
     Canvas dialogueCanvas;
@@ -68,8 +68,8 @@ public class DialogueUI : MonoBehaviour
             }
             else
             {
-                print("Conversation over");
-                OnEndDialogue?.Invoke();
+                dialogueCanvas.enabled = false;
+                OnEndDialogue?.Invoke(null);
             }
 
             readyForNextLine = false;
