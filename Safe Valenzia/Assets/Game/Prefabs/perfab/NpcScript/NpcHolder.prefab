@@ -43,7 +43,6 @@ GameObject:
   - component: {fileID: 128938263364519142}
   - component: {fileID: 128938263364519146}
   - component: {fileID: 128938263364519145}
-  - component: {fileID: 128938263364519144}
   - component: {fileID: 128938263364519143}
   - component: {fileID: 128938263364519147}
   m_Layer: 6
@@ -129,7 +128,7 @@ Animator:
   m_GameObject: {fileID: 128938263364519141}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 7e9fd6c14b7386548915d22ada6474ad, type: 2}
+  m_Controller: {fileID: 0}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -138,24 +137,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &128938263364519144
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 128938263364519141}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 42cacbdf7ef5ce44ca546b374beff9b3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  NpcDirectionVector: {x: 0, y: 0, z: 0}
-  NpcTransform: {fileID: 128938263364519142}
-  NpcSpeed: 0.5
-  NpcAnimator: {fileID: 128938263364519145}
-  NpcBounds: {fileID: 128938263563965270}
-  PlayerInRange: 0
 --- !u!50 &128938263364519143
 Rigidbody2D:
   serializedVersion: 4
