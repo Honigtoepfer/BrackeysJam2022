@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System;
+using UnityEngine.SceneManagement;
 
 public class Timer : MonoBehaviour
 {
@@ -25,5 +26,9 @@ public class Timer : MonoBehaviour
         }
         TimeSpan time = TimeSpan.FromSeconds(CurrentTime);
         CurrentTimeText.text = time.Minutes.ToString() + ":" + time.Seconds.ToString();
+        if (CurrentTime <= 0)
+        {
+            SceneManager.LoadScene("Lose");
+        }
     }
 }
