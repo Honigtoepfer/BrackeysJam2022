@@ -7,8 +7,10 @@ using UnityEngine.SceneManagement;
 public class MainMnue : MonoBehaviour
 {
     public Slider volumeSlider;
+    [SerializeField] private float TimeUntilTheEnd = 1800;
     public void playGame()
     {
+        GameVars.current.currentTimer = TimeUntilTheEnd;
         SceneManager.LoadScene("MainScene");
     }
     public void options()

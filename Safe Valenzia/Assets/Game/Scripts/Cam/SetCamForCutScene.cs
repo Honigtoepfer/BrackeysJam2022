@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering;
+using UnityEngine.SceneManagement;
 
 
 public class SetCamForCutScene : MonoBehaviour
@@ -25,6 +26,11 @@ public class SetCamForCutScene : MonoBehaviour
     void Update()
     {
         first.weight = Mathf.Lerp(first.weight, firstTarget, Time.deltaTime);
+    }
+
+    public void GotoMainMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
     }
 
 
