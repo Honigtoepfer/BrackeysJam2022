@@ -6,9 +6,10 @@ public class CameraFollower : MonoBehaviour
 {
     
     MainInput mainInput;
-    [SerializeField] private Transform followObj;
+    public Transform followObj;
     [SerializeField] private float extendLength = 1f;
     [SerializeField] private float speed = 1f;
+    public float TargetFOV = 5f;
 
     void Awake()
     {
@@ -24,6 +25,8 @@ public class CameraFollower : MonoBehaviour
         dirToMove = Vector2.Lerp(transform.position, dirToMove, Time.deltaTime * speed);
         
         transform.position = new Vector3(dirToMove.x, dirToMove.y, -10);
+
+        Camera.main.orthographicSize = Mathf.Lerp(Camera.main.orthographicSize, TargetFOV, Time.deltaTime * speed);
 
     }
 

@@ -180,6 +180,7 @@ GameObject:
   - component: {fileID: 5512173913438635679}
   - component: {fileID: 5512173913438635678}
   - component: {fileID: 1248968934767226610}
+  - component: {fileID: 2938229009731581972}
   m_Layer: 0
   m_Name: EnterDungeon
   m_TagString: Untagged
@@ -350,7 +351,20 @@ MonoBehaviour:
   - {x: 1.1978226, y: -2, z: 0}
   m_ShapePathHash: 318996141
   m_Mesh: {fileID: 0}
-  m_InstanceId: 57624
+  m_InstanceId: 59028
+--- !u!114 &2938229009731581972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5512173913438635674}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac5fceb723e08aa4184e92b31a6debb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneNumber: 0
 --- !u!1 &5512173914440433479
 GameObject:
   m_ObjectHideFlags: 0
