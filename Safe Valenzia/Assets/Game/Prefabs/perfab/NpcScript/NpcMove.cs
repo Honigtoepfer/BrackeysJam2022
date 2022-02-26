@@ -98,17 +98,17 @@ public class NpcMove : MonoBehaviour , IInteractable
         }
     }
     //***************interactable************
-    void IInteractable.Interact()
+    public void Interact()
     {
-        // do nothing...
+        
     }
     // to sop walking when inter acting with the player..
-    void IInteractable.Enter()
+    public void Enter()
     {
         PlayerInRange = true;
     }
     //to start moving again when the player is out of area ...
-    void IInteractable.Exit()
+    public void Exit()
     {
         PlayerInRange = false;
     }

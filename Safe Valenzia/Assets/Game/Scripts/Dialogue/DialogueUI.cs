@@ -70,6 +70,7 @@ public class DialogueUI : MonoBehaviour
             {
                 dialogueCanvas.enabled = false;
                 OnEndDialogue?.Invoke(null);
+                count = 0;
             }
 
             readyForNextLine = false;
