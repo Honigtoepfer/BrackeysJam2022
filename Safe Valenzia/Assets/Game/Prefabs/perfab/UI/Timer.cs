@@ -8,27 +8,22 @@ using UnityEngine.SceneManagement;
 public class Timer : MonoBehaviour
 {
     public Text CurrentTimeText;
-    float CurrentTime;
     public int startMinute;
     // Start is called before the first frame update
-    void Start()
-    {
-        CurrentTime = startMinute * 60;
-    }
 
     // Update is called once per frame
     void Update()
     {
         
-        if (CurrentTime > 0.001)
+        if (GameVars.current.currentTimer > 0.001)
         {
-            CurrentTime = CurrentTime - Time.deltaTime;
+            GameVars.current.currentTimer -= Time.deltaTime;
         }
-        TimeSpan time = TimeSpan.FromSeconds(CurrentTime);
+        TimeSpan time = TimeSpan.FromSeconds(GameVars.current.currentTimer);
         CurrentTimeText.text = time.Minutes.ToString() + ":" + time.Seconds.ToString();
-        if (CurrentTime <= 0)
+        if (GameVars.current.currentTimer <= 0)
         {
-            SceneManager.LoadScene("Lose");
+            GameVars.current.currentTimer = 0;
         }
     }
 }

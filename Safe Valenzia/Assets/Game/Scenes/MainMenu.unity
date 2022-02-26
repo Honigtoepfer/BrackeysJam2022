@@ -1102,6 +1102,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 901acd7e05fe7e84c87a6c824e6ca781, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  volumeSlider: {fileID: 0}
+  TimeUntilTheEnd: 1200
 --- !u!114 &940954530
 MonoBehaviour:
   m_ObjectHideFlags: 0

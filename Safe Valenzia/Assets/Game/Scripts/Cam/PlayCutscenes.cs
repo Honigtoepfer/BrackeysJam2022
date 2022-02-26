@@ -32,7 +32,7 @@ public class PlayCutscenes : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if(GameVars.current.currentTimer < 0 && !once)
+        if(GameVars.current.currentTimer <= 0 && !once)
         {
             anim.SetTrigger("flood");
         }
